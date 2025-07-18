@@ -94,7 +94,7 @@ end
 
 %Solve the power minimization under QoS requirements problem using CVX
 cvx_begin
-cvx_quiet(true); % this suppresses screen output from the solver
+% cvx_quiet(true); % this suppresses screen output from the solver
 variable P(Kt,Kr); %Variable for Kt x Kr power allocation matrix
 
 minimize real(sum(P(:))) %Minimize the total power

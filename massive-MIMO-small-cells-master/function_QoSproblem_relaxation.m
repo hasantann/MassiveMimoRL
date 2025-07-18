@@ -79,7 +79,7 @@ end
 
 %Solve the power minimization under QoS requirements problem using CVX
 cvx_begin
-cvx_quiet(true); % This suppresses screen output from the solver
+% cvx_quiet(true); % This suppresses screen output from the solver
 variable W(N,N,Kr) complex; %Variable for N x N x Kr beamforming matrix
 
 minimize real(trace(sum(W,3))) %Minimize the total power

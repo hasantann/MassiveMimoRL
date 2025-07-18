@@ -50,7 +50,7 @@ L = length(q); %Number of power constraints
 
 %Solve the power minimization under QoS requirements problem using CVX
 cvx_begin
-cvx_quiet(true); % This suppresses screen output from the solver
+% cvx_quiet(true); % This suppresses screen output from the solver
 
 variable W(N,Kr) complex; %Variable for N x Kr beamforming matrix
 
